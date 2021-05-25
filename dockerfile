@@ -4,7 +4,7 @@ FROM node:10
 WORKDIR /ssl_test
 
 #Environment variables
-ENV PORT=4000
+ENV PORT=80
 ENV USE_SSL=TRUE
 ENV SSL_PATH=/home/botz/certificates
 
@@ -21,6 +21,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 4000
+EXPOSE 80
 
 CMD [ "node", "index.js" ]
