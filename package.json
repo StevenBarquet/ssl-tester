@@ -1,0 +1,15 @@
+{
+  "name": "ssl-tester",
+  "version": "1.0.0",
+  "description": "Simple app for test certificates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ssl",
+    "node"
+  ],
+  "author": "steven barquet",
+  "license": "ISC"
+}
