@@ -20,7 +20,7 @@ docker container logs ssl-test-container
 	docker container logs shelly-back2-container
 
 ## With host volume for ssl files
-docker run --name ssl-test-container -p 80:80 -d \
+docker run --name ssl-test-container -p 4000:4000 -d \
   --mount type=bind,source=/home/botz/certificates,target=/home/botz/certificates,readonly \
   ssl_test_image
 
