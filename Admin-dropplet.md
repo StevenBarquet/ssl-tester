@@ -21,7 +21,7 @@ docker container logs ssl-test-container
 
 ## With host volume for ssl files
 docker run --name ssl-test-container -p 4000:4000 -d \
-  --mount type=bind,source=/home/botz/certificates,target=/home/botz/certificates,readonly \
+  --mount type=bind,source=/etc/letsencrypt/live/shelly-store.com,target=/etc/letsencrypt/live/shelly-store.com,readonly \
   ssl_test_image
 
   ssh root@174.138.49.191

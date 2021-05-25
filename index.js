@@ -32,8 +32,8 @@ let optionsSSL
 
 try {
   optionsSSL = {
-    key: fs.readFileSync(`${sslPath}/certificate.key`),
-    cert: fs.readFileSync(`${sslPath}/certificate.crt`)
+    key: fs.readFileSync(`${sslPath}/privkey.pem`),
+    cert: fs.readFileSync(`${sslPath}/fullchain.pem`)
   };
   console.log('exito cert: ', optionsSSL);
 } catch (error) {
