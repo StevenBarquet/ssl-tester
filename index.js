@@ -35,10 +35,10 @@ try {
     key: fs.readFileSync(`${sslPath}/certificate.key`),
     cert: fs.readFileSync(`${sslPath}/certificate.crt`)
   };
-  // console.log('exito cert: ', optionsSSL);
+  console.log('exito cert: ', optionsSSL);
 } catch (error) {
   optionsSSL = {};
-  // console.log('fallo cert: ', error);
+  console.log('fallo cert: ', error);
 }
 
 const trySSL = process.env.USE_SSL || false // Set use of https from enviroment
