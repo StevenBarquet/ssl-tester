@@ -6,7 +6,7 @@ WORKDIR /ssl_test
 #Environment variables
 ENV PORT=80
 ENV USE_SSL=TRUE
-ENV SSL_PATH=/home/botz/certificates
+ENV SSL_PATH=/etc/letsencrypt/live/shelly-store.com
 
 # VOLUME ["/home/botz/certificates/"]
 # Install app dependencies
