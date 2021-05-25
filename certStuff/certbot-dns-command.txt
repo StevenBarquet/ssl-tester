@@ -1,0 +1,5 @@
+sudo certbot certonly \
+  --dns-digitalocean \
+  --dns-digitalocean-credentials /home/botz/certificates/digitalocean.ini \
+  -d shelly-store.com \
+  -d www.shelly-store.com
