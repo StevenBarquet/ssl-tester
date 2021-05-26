@@ -12,7 +12,7 @@ docker container inspect ssl-test-container
 
 
 ## With host volume for ssl files
-docker run --name ssl-test-container -p 80:80 -d \
+docker run --name ssl-test-container --privileged=true -p 5000:5000 -d \
   --mount type=bind,source=/etc/letsencrypt/live/shelly-store.com,target=/etc/letsencrypt/live/shelly-store.com \
   --mount type=bind,source=/etc/letsencrypt/archive/shelly-store.com,target=/etc/letsencrypt/archive/shelly-store.com \
   ssl_test_image

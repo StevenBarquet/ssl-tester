@@ -4,7 +4,7 @@ FROM node:10
 WORKDIR /ssl_test
 
 #Environment variables
-ENV PORT=80
+ENV PORT=5000
 ENV USE_SSL=TRUE
 ENV SSL_PATH=/etc/letsencrypt/live/shelly-store.com
 
@@ -21,6 +21,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 80
+EXPOSE 5000
 
 CMD [ "node", "index.js" ]
